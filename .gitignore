@@ -1,0 +1,5 @@
+/server/dist
+/server/node_modules
+/server/.npm
+/server/.config
+/server/.node_repl_history

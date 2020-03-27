@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+    server:
+        restart: always
+        image: node
+        user: node
+        working_dir: /home/node
+        command: npm start
+        tty: true
+        stdin_open: true
+        volumes:
+            - .:/home/node
+
+    npm:
+        image: node
+        user: node
+        working_dir: /home/node
+        entrypoint: npm
+        tty: true
+        stdin_open: true
+        volumes:
+            - .:/home/node
+
+    node:
+        image: node
+        user: node
+        working_dir: /home/node
+        entrypoint: node
+        tty: true
+        stdin_open: true
+        volumes:
+            - .:/home/node
