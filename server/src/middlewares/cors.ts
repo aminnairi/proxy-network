@@ -11,7 +11,8 @@ export default function cors(request: Request, response: Response, next: any) {
 
     const origins = [
         "http://404placevendome.com",
-        "http://404placevendome.local"
+        "http://404placevendome.local",
+        "http://localhost:8080"
     ];
 
     if (!origins.includes(origin)) {

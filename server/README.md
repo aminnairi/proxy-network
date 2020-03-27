@@ -15,4 +15,4 @@ $ make restart  # restart the server
 $ make stop     # stop the server
 ```
 
-The server will be available at [`api.404placevendome.local`](http://api.404placevendome.local).
+The server will be available at [`localhost:8081`](http://localhost:8081).

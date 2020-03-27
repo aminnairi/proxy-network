@@ -19,3 +19,7 @@ $ make start    # start the services
 $ make stop     # stop the services
 $ make restart  # alias for make stop start
 ```
+
+Once started, you can access:
+- The client at [`404placevendome.local`](http://404placevendome.local).
+- The server at [`api.404placevendome.local`](http://api.404placevendome.local).
