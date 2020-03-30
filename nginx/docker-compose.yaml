@@ -7,13 +7,4 @@ services:
             - 80:80
         volumes:
             - ./default.conf:/etc/nginx/conf.d/default.conf
-        networks:
-            - client_default
-            - server_default
-
-networks:
-    client_default:
-        external: true
-        
-    server_default:
-        external: true
+            - ./hosts:/etc/hosts
