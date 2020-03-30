@@ -9,7 +9,7 @@ stop:
 restart: stop start
 
 install:
-	docker-compose run --rm npm instal
+	docker-compose run --rm npm install
 
 build:
 	docker-compose run --rm npm run build
