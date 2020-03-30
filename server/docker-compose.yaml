@@ -1,5 +1,9 @@
 version: "3"
 
+networks:
+    nginx_default:
+        external: true
+
 services:
     server:
         restart: always
@@ -13,6 +17,8 @@ services:
         stdin_open: true
         volumes:
             - .:/home/node
+        networks:
+            - nginx_default
 
     npm:
         image: node
